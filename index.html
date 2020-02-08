@@ -278,11 +278,9 @@
 						var dg_scr = document.createElement('script'); dg_scr.type = 'text/javascript'; dg_scr.async = true;
 						dg_scr.src = (('https:' == document.location.protocol) ? 'https://' : 'http://') + 'track.freecallinc.com/freecall.js';
 						dg_scr.onload = function(){
-							try 
-							{
-								deskGod.track(85031, 85207);
-							}
-							catch(err){ }
+							try {
+							deskGod.track(85031, 85207);
+							} catch(err){ }
 							};
 						var s = document.getElementsByTagName('script')[0];
 						s.parentNode.insertBefore(dg_scr, s);
