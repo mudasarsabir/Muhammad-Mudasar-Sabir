@@ -288,29 +288,34 @@
 			</script>
 			<!-- end Free Call inc code -->
 			<script>
-							(function () {
-					var options = {
-						whatsapp: "+923087921962", // WhatsApp number
-						call_to_action: "Message me on what'sapp", // Call to action
-						position: "right", // Position may be 'right' or 'left'
-					};
-					var proto = document.location.protocol, host = "whatshelp.io", url = proto + "//static." + host;
-					var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
-					s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
-					var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
-				})();
+				(
+					function ()
+						{
+							var options = {
+								whatsapp: "+923087921962", // WhatsApp number
+								call_to_action: "Message me on what'sapp", // Call to action
+								position: "right", // Position may be 'right' or 'left'
+							};
+							var proto = document.location.protocol, host = "whatshelp.io", url = proto + "//static." + host;
+							var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+							s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+							var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+						}
+				)();
 			</script>
 			<!--Start of Tawk.to Script-->
 			<script type="text/javascript">
-			var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-			(function(){
-			var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-			s1.async=true;
-			s1.src='https://embed.tawk.to/5e43b046a89cda5a18857ab5/default';
-			s1.charset='UTF-8';
-			s1.setAttribute('crossorigin','*');
-			s0.parentNode.insertBefore(s1,s0);
-			})();
+				var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+				(function()
+						{
+							var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+							s1.async=true;
+							s1.src='https://embed.tawk.to/5e43b046a89cda5a18857ab5/default';
+							s1.charset='UTF-8';
+							s1.setAttribute('crossorigin','*');
+							s0.parentNode.insertBefore(s1,s0);
+						}
+				)();
 			</script>
 			<!--End of Tawk.to Script-->
 												
