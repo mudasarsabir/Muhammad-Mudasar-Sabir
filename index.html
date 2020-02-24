@@ -7,6 +7,7 @@
         <link rel="icon" href="img/favicon.png" type="image/png">
         <title>Muhammad Muddasar Sabir</title>
         <!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="css/all.min.css">
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="vendors/linericon/style.css">
         <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -157,24 +158,6 @@
         			</div>
 		</div>
 		</center>-->
-        <!--================Ads Area =================-->
-        <section class="feature_area p_120">
-        	<div class="container">
-        		<div class="main_title">
-        			<h2>Ads</h2>
-        		</div>
-        		<div class="feature_inner row">
-        			<div class="col-lg-4 col-md-6">
-        				<div class="feature_item">
-						<p class="text-danger">If you are interested in cloud mining.Then click it.</p>
-							<a href="https://vixes.biz/?ref=LRq1vy">
- 								<img src="https://vixes.biz/media/banners/vixes240x400.gif"/>
-							</a>
-						</div>
-        			</div>
-        	</div>
-        </section>
-        <!--================End Ads Area =================-->
 
 <!--================Feature Area =================-->
         <section class="feature_area p_120">
@@ -225,37 +208,53 @@
         
         <!--================Footer Area =================-->
 		<center>
-        <footer class="footer_area p_120">
+        <footer class="footer_area"><br>
         	<div class="container">
         		<div class="row footer_inner">
-        			<div class="col-lg-10 col-sm-10">
+				<div class="col-lg-6">
+        			<div class="col-lg-12">
         				<aside class="f_widget ab_widget">
         					<div class="f_title">
         						<h3>About Me</h3>
         					</div>
         					<p>Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills,</p>
-        					<p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> Muhammad Muddasar Sabir | <a href="https://colorlib.com" target="_blank">Colorlib</a>
-							</p><br>
+        					</p><br>
         				</aside>
         			</div>
-        			<div class="col-lg-2">
+        			<div class="col-lg-12">
         				<aside class="f_widget social_widget">
         					<div class="f_title">
         						<h3>Follow Me</h3>
         					</div>
         					<p>Let us be social</p>
         					<ul class="list">
-        						<li><a href="https://www.facebook.com/mudasar.sabir.9"><i class="fa fa-facebook"></i></a></li>
-        						<li><a href="https://twitter.com/mudasarsabir"><i class="fa fa-twitter"></i></a></li>
-        						<li><a href="https://www.linkedin.com/in/mudasar-sabir-74680796/"><i class="fa fa-linkedin"></i></a></li>
-        						<li><a href="https://github.com/MudasarSabir"><i class="fa fa-github"></i></a></li>
+        						<li><a href="https://www.facebook.com/mudasar.sabir.9"><i class="fab fa-2x fa-facebook"></i></a></li>
+        						<li><a href="https://twitter.com/mudasarsabir"><i class="fab fa-2x fa-twitter"></i></a></li>
+        						<li><a href="https://www.linkedin.com/in/mudasar-sabir-74680796/"><i class="fab fa-2x fa-linkedin"></i></a></li>
+        						<li><a href="https://github.com/MudasarSabir"><i class="fab fa-2x fa-github"></i></a></li>
         					</ul>
-        				</aside>
+        				</aside><br>
+        			</div>
+					</div>
+
+
+
+					<div class="col-lg-6">
+        				<aside class="f_widget social_widget">
+        					<div class="f_title">
+        						<h3>Cryptocurrency</h3>
+        					</div>
+        					<p>Address</p>
+								<i class="btn btn-light"> <i class="fab fa-2x fa-bitcoin"></i> = <i id="p1"> 1DXey6wgv6ibF7xZhKoL1XpUgc7EnZu2Sm </i><span class="badge badge-secondary">New</span><br><button class="btn btn-dark" onclick="copyToClipboard('#p1')"><i class="far fa-hand-pointer"> Click hear </i> <i class="far fa-copy"></i> Copy Bitcoin Address </button></i><br><br>
+								<i class="btn btn-light"><i class="fab fa-2x fa-ethereum"></i> = <i id="p2"> 0x9c48c675e265038E982281427d6E4D09a87321D9 </i><span class="badge badge-secondary">New</span><br><button class="btn btn-dark" onclick="copyToClipboard('#p2')"><i class="far fa-hand-pointer"> Click hear </i> <i class="far fa-copy"></i> Copy Ethereum Address </button></i><br><br>
+								<i class="btn btn-light"><i class="fab fa-2x fa-monero"></i> = <i id="p3"> 432YXDa71aRVf5Utf2qYHoik1wvwGEJQDKh<br>K4iunQNh75Ew1aSTjqpdYoaEfHWMsapTpXh<br>g2xDRdoSnd2KS8Lm9TM86JsQG </i><span class="badge badge-secondary">New</span><br><button class="btn btn-dark" onclick="copyToClipboard('#p3')"><i class="far fa-hand-pointer"> Click hear </i> <i class="far fa-copy"></i> Copy  Monero Address </button></i>
+						</aside>
         			</div>
         		</div>
-        	</div>
-		</center>	
+        	</div><br><br>
+		</center>
         </footer>
+		<center><p class="text-dark">Copyright &copy;<script>document.write(new Date().getFullYear());</script> Muhammad Muddasar Sabir | 	Colorlib</a></center>
         <!--================End Footer Area =================-->
         
         
@@ -277,6 +276,7 @@
         <script src="vendors/counter-up/jquery.waypoints.min.js"></script>
         <script src="vendors/counter-up/jquery.counterup.min.js"></script>
         <script src="js/theme.js"></script>
+
 		
 			<!-- Paste Free Call code right before the closing body tag </BODY> -->
 			<!-- begin Free Call code -->
@@ -296,6 +296,20 @@
 			</script>
 			<!-- end Free Call inc code -->
 			
+			
+			<!--Copy Function-->
+			<script>
+				function copyToClipboard(element) {
+				var $temp = $("<input>");
+				$("body").append($temp);
+				$temp.val($(element).text()).select();
+				document.execCommand("copy");
+				alert(" Copied The Coin Address ");
+				$temp.remove();
+				}
+			</script>
+			<!--Copy function end-->
+
 			<!--<script>
 				(
 					function ()
@@ -345,6 +359,5 @@
 				var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
 				})();
 			</script>
-												
-    </body>
+	</body>
 </html>
