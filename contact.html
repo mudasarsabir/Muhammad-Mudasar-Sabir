@@ -17,6 +17,10 @@
         <!-- main css -->
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/responsive.css">
+
+        <!--JavaScript Start-->
+		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+		<!--JavaScript end-->
     </head>
     <body>
 
@@ -122,72 +126,83 @@
         <!--================Contact Area =================-->
         
         <!--================Footer Area =================-->
-        <center>
-        <footer class="footer_area p_120">
+		<center>
+        <footer class="footer_area"><br>
         	<div class="container">
         		<div class="row footer_inner">
-        			<div class="col-lg-10 col-sm-10">
+				<div class="col-lg-6">
+        			<div class="col-lg-12">
         				<aside class="f_widget ab_widget">
         					<div class="f_title">
         						<h3>About Me</h3>
         					</div>
         					<p>Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills,</p>
-        					<p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> Muhammad Mudasar Sabir | <a href="https://colorlib.com" target="_blank">Colorlib</a>
-							</p><br>
+        					</p><br>
         				</aside>
         			</div>
-        			<div class="col-lg-2">
+        			<div class="col-lg-12">
         				<aside class="f_widget social_widget">
         					<div class="f_title">
         						<h3>Follow Me</h3>
         					</div>
         					<p>Let us be social</p>
         					<ul class="list">
-        						<li><a href="https://www.facebook.com/mudasar.sabir.9"><i class="fa fa-facebook"></i></a></li>
-        						<li><a href="https://twitter.com/mudasarsabir"><i class="fa fa-twitter"></i></a></li>
-        						<li><a href="https://www.linkedin.com/in/mudasar-sabir-74680796/"><i class="fa fa-linkedin"></i></a></li>
-        						<li><a href="https://github.com/MudasarSabir"><i class="fa fa-github"></i></a></li>
+        						<li><a href="https://www.facebook.com/mudasar.sabir.9"><i class="fab fa-3x fa-facebook"></i></a></li>
+        						<li><a href="https://twitter.com/mudasarsabir"><i class="fab fa-3x fa-twitter"></i></a></li>
+        						<li><a href="https://www.linkedin.com/in/mudasar-sabir-74680796/"><i class="fab fa-2x fa-linkedin"></i></a></li>
+        						<li><a href="https://github.com/MudasarSabir"><i class="fab fa-3x fa-github"></i></a></li>
+								<li><a href="https://github.com/MudasarSabir"><i class="fab fa-3x fa-slack"></i></a></li>
+								<li><a href="https://github.com/MudasarSabir"><i class="fab fa-3x fa-whatsapp"></i></a></li>
+								<li><a href="https://github.com/MudasarSabir"><i class="fab fa-3x fa-snapchat"></i></a></li>
+								<li><a href="https://github.com/MudasarSabir"><i class="fab fa-3x fa-youtube"></i></a></li>
+								<li><a href="https://github.com/MudasarSabir"><i class="fab fa-3x fa-instagram"></i></a></li>
+								<li><a href="https://github.com/MudasarSabir"><i class="fab fa-3x fa-wechat"></i></a></li>
+								<li><a href="https://github.com/MudasarSabir"><i class="fab fa-3x fa-pinterest"></i></a></li>
+								<li><a href="https://github.com/MudasarSabir"><i class="fab fa-3x fa-reddit"></i></a></li>
+								<li><a href="https://github.com/MudasarSabir"><i class="fab fa-3x fa-discord"></i></a></li>
         					</ul>
-        				</aside>
+        				</aside><br>
         			</div>
+					</div>
+
+<!--
+					<div class="col-lg-7">
+        				<aside class="f_widget social_widget">
+        					<div class="f_title">
+        						<h3>Cryptocurrency Address</h3>
+        					</div>
+								<i class="btn btn-light "> <i class="fab fa-2x fa-bitcoin"></i> = <i id="p1"> 1DXey6wgv6ibF7xZhKoL1XpUgc7EnZu2Sm </i><span class="badge badge-secondary">New</span><br><button class="btn btn-dark" onclick="copyToClipboard('#p1')"><i class="far fa-hand-pointer"> Click hear </i> <i class="far fa-copy"></i> Copy Bitcoin Address </button></i><br><br>
+								<i class="btn btn-light "><i class="fab fa-2x fa-ethereum"></i> = <i id="p2"> 0x9c48c675e265038E982281427d6E4D09a87321D9 </i><span class="badge badge-secondary">New</span><br><button class="btn btn-dark" onclick="copyToClipboard('#p2')"><i class="far fa-hand-pointer"> Click hear </i> <i class="far fa-copy"></i> Copy Ethereum Address </button></i><br><br>
+								<i class="btn btn-light "><i class="fab fa-2x fa-monero"></i> = <i id="p3"> 432YXDa71aRVf5Utf2qYHoik1wvwGEJQDKh<br>K4iunQNh75Ew1aSTjqpdYoaEfHWMsapTpXh<br>g2xDRdoSnd2KS8Lm9TM86JsQG </i><span class="badge badge-secondary">New</span><br><button class="btn btn-dark" onclick="copyToClipboard('#p3')"><i class="far fa-hand-pointer"> Click hear </i> <i class="far fa-copy"></i> Copy  Monero Address </button></i>
+						</aside>
+        			</div>
+-->
+
+					<div class="col-lg-6 container">
+						<h3 class="text-white">Cryptocurrency Address <span class="badge badge-success">New</span></h3><br>
+						<div class="btn card col-lg-6 col-md-12 pt-2 pb-2 float-left btn-light">
+							<i class="fab fa-3x fa-bitcoin"></i>
+							<p id="p1">1DXey6wgv6ibF7xZhKoL1XpUgc7EnZu2Sm</p>
+							<button class="btn btn-outline-success" onclick="copyToClipboard('#p1')"><i class="far fa-hand-pointer"> Click hear </i> <i class="far fa-copy"></i> Copy Bitcoin Address </button>
+						</div>
+						<div class="btn card col-lg-6 col-md-12 pt-2 pb-2 float-right btn-light">
+							<i class="fab fa-3x fa-ethereum"></i>
+							<p id="p2">0x9c48c675e265038E982281427d6E4D09a87321D9</p>
+							<button class="btn btn-outline-success" onclick="copyToClipboard('#p2')"><i class="far fa-hand-pointer"> Click hear </i> <i class="far fa-copy"></i> Copy Ethereum Address </button>
+						</div><br>
+						<div class="btn card col-12 pt-2 pb-2 btn-light">
+							<i class="fab fa-3x fa-monero"></i>
+							<p id="p3">432YXDa71aRVf5Utf2qYHoik1wvwGEJQDKhK4iunQNh75Ew1aSTjqpdYoaEfHWMsapTpXhg2xDRdoSnd2KS8Lm9TM86JsQG</p>
+							<button class="btn btn-outline-success" onclick="copyToClipboard('#p3')"><i class="far fa-hand-pointer"> Click hear </i> <i class="far fa-copy"></i> Copy Monero Address </button>
+						</div>
+					</div>
+
         		</div>
-        	</div>
-		</center>	
+        	</div><br><br>
+		</center>
         </footer>
+		<center><p class="text-dark">Copyright &copy;<script>document.write(new Date().getFullYear());</script> Muhammad Muddasar Sabir | 	Colorlib</a></center>
         <!--================End Footer Area =================-->
-        
-        <!--================Contact Success and Error message Area =================-->
-        <div id="success" class="modal modal-message fade" role="dialog">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <i class="fa fa-close"></i>
-                        </button>
-                        <h2>Thank you</h2>
-                        <p>Your message is successfully sent...</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Modals error -->
-
-        <div id="error" class="modal modal-message fade" role="dialog">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <i class="fa fa-close"></i>
-                        </button>
-                        <h2>Sorry !</h2>
-                        <p> Something went wrong </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--================End Contact Success and Error message Area =================-->
-        
         
         
         
@@ -203,36 +218,94 @@
         <script src="vendors/isotope/isotope-min.js"></script>
         <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
         <script src="js/jquery.ajaxchimp.min.js"></script>
-        <script src="js/mail-script.js"></script>
         <script src="vendors/counter-up/jquery.waypoints.min.js"></script>
         <script src="vendors/counter-up/jquery.counterup.min.js"></script>
-        <!-- contact js -->
-        <script src="js/jquery.form.js"></script>
-        <script src="js/jquery.validate.min.js"></script>
-        <script src="js/contact.js"></script>
-        <!--gmaps Js-->
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
-        <script src="js/gmaps.min.js"></script>
         <script src="js/theme.js"></script>
-	    
-            <!-- Paste Free Call code right before the closing body tag </BODY> -->
-            <!-- begin Free Call code -->
-            <a style="bottom: 0px; position: absolute; right: 0px;" id="dglca9" href="https://www.livechatalternative.com/" alt="The Live Chat Alternative">https://www.livechatalternative.com/</a>
-            <script type="text/javascript">
-            (function() {
-            var dg_scr = document.createElement('script'); dg_scr.type = 'text/javascript'; dg_scr.async = true;
-            dg_scr.src = (('https:' == document.location.protocol) ? 'https://' : 'http://') + 'track.freecallinc.com/freecall.js';
-            dg_scr.onload = function(){
-                try {
-                deskGod.track(85031, 85213);
-                } catch(err){ }
-            };
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(dg_scr, s);
-            })();
-            </script>
-            <!-- end Free Call inc code -->
-						
+		<script src="js/bootstrap.min.js"></script>
+
+		
+			<!-- Paste Free Call code right before the closing body tag </BODY> -->
+			<!-- begin Free Call code -->
+			<a style="bottom: 0px; position: absolute; right: 0px;" id="dglca9" href="https://www.livechatalternative.com/" alt="The Live Chat Alternative">https://www.livechatalternative.com/</a>
+			<script type="text/javascript">
+			(function() {
+			var dg_scr = document.createElement('script'); dg_scr.type = 'text/javascript'; dg_scr.async = true;
+			dg_scr.src = (('https:' == document.location.protocol) ? 'https://' : 'http://') + 'track.freecallinc.com/freecall.js';
+			dg_scr.onload = function(){
+				try {
+				deskGod.track(85031, 85213);
+				} catch(err){ }
+			};
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(dg_scr, s);
+			})();
+			</script>
+			<!-- end Free Call inc code -->
+			
+			
+			<!--Copy Function-->
+			<script>
+				function copyToClipboard(element) {
+				var $temp = $("<input>");
+				$("body").append($temp);
+				$temp.val($(element).text()).select();
+				document.execCommand("copy");
+				swal("Good job!", "You Copied The Coin Address", "success");
+				$temp.remove();
+				}
+
+			</script>
+			<!--Copy function end-->
+
+			<!--<script>
+				(
+					function ()
+						{
+							var options = {
+								whatsapp: "+923087921962", // WhatsApp number
+								call_to_action: "Message me on what'sapp", // Call to action
+								position: "right", // Position may be 'right' or 'left'
+							};
+							var proto = document.location.protocol, host = "whatshelp.io", url = proto + "//static." + host;
+							var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+							s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+							var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+						}
+				)();
+			</script>-->
+			
+			<!--Start of Tawk.to Script-->
+			<script type="text/javascript">
+				var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+				(function()
+						{
+							var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+							s1.async=true;
+							s1.src='https://embed.tawk.to/5e43b046a89cda5a18857ab5/default';
+							s1.charset='UTF-8';
+							s1.setAttribute('crossorigin','*');
+							s0.parentNode.insertBefore(s1,s0);
+						}
+				)();
+			</script>
+			<!--End of Tawk.to Script-->
+
+			<script>
+				(function () {
+				var options = {
+					facebook: "591060880916486", // Facebook page ID
+					whatsapp: "+923087921962", // WhatsApp number
+					call_to_action: "Chat", // Call to action
+					button_color: "#A8CE50", // Color of button
+					position: "right", // Position may be 'right' or 'left'
+					order: "facebook,whatsapp", // Order of buttons
+				};
+				var proto = document.location.protocol, host = "whatshelp.io", url = proto + "//static." + host;
+				var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+				s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+				var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+				})();
+			</script>
 
     </body>
 </html>
