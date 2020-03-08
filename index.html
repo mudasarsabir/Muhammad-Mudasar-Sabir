@@ -26,6 +26,10 @@
         <!-- main css -->
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/responsive.css">
+
+		<!--JavaScript Start-->
+		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+		<!--JavaScript end-->
     </head>
     <body>
 
@@ -268,12 +272,12 @@
 
 					<div class="col-lg-6 container-fluid">
 						<h3 class="text-white">Cryptocurrency Address <span class="badge badge-success">New</span></h3><br>
-						<div class="btn card col-12 pt-2 pb-2 float-left btn-light">
+						<div class="btn card col-6 pt-2 pb-2 float-left btn-light">
 							<i class="fab fa-3x fa-bitcoin"></i>
 							<p id="p1">1DXey6wgv6ibF7xZhKoL1XpUgc7EnZu2Sm</p>
 							<button class="btn btn-outline-success" onclick="copyToClipboard('#p1')"><i class="far fa-hand-pointer"> Click hear </i> <i class="far fa-copy"></i> Copy Bitcoin Address </button>
 						</div>
-						<div class="btn card col-12 pt-2 pb-2 float-right btn-light">
+						<div class="btn card col-6 pt-2 pb-2 float-right btn-light">
 							<i class="fab fa-3x fa-ethereum"></i>
 							<p id="p2">0x9c48c675e265038E982281427d6E4D09a87321D9</p>
 							<button class="btn btn-outline-success" onclick="copyToClipboard('#p2')"><i class="far fa-hand-pointer"> Click hear </i> <i class="far fa-copy"></i> Copy Ethereum Address </button>
@@ -338,9 +342,10 @@
 				$("body").append($temp);
 				$temp.val($(element).text()).select();
 				document.execCommand("copy");
-				alert(" Copied The Coin Address ");
+				swal("Good job!", "You Copied The Coin Address", "success");
 				$temp.remove();
 				}
+
 			</script>
 			<!--Copy function end-->
 
