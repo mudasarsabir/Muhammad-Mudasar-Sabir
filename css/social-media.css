@@ -117,5 +117,19 @@ background: linear-gradient(#400080, transparent), linear-gradient(200deg, #d047
 }
 .t5
 {
-  margin-top: -20%;
+  margin-top: 8%;
+  background-color: #ffff00;
+}
+.t6
+{
+  background-color: #68f774;
+  padding: 3.7%;
+}
+.t7
+{
+  padding-bottom: 7%;
+}
+.t8
+{
+  
 }
