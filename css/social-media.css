@@ -1,0 +1,118 @@
+.t1{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+display: flex;
+
+}
+.t2{
+  margin: auto;
+  padding-right: 10%;
+}
+.t1 .t2{
+list-style: none;
+
+}
+.t1 .t2 .fa{
+font-size: 150%;
+color: #262626;
+line-height: 190%;
+transition: .5s;
+
+}
+.t1 .t2 .t3{
+position: relative;
+display: block;
+width: 3em;
+height: 3em;
+background-color: #fff;
+text-align: center;
+transform: perspective(100px) rotate(-30deg) skew(25deg) translate(0,0);
+transition: .5s;
+box-shadow: -20px 20px 10px rgb(0, 0, 0, 0.5);
+}
+.t1 .t2 .t3::before{
+content: "";
+position: absolute;
+top: 20%;
+left: -42%;
+height: 101%;
+width: 42%;
+background: #b1b1b1;
+transition: .5s;
+transform: rotate(0deg) skewY(-45deg);
+}
+.t1 .t2 .t3::after{
+content: "";
+position: absolute;
+top: 100%;
+left: -10px;
+height: 20px;
+width: 100%;
+background: #b1b1b1;
+transition: .5s;
+transform: rotate(0deg) skewX(-45deg);
+}
+.t1 .t2 .t3:hover{
+transform: perspective(100px) rotate(-30deg) skew(25deg) translate(20px, -20px);
+box-shadow: -50px 50px 50px rgb(0, 0, 0, 0.5);
+}
+.t1 .t2:hover .fa{
+color: #fff;
+}
+.t1 .t2 .t3:hover{
+transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(35px, -35px);
+box-shadow: -50px 50px 50px rgb(0, 0, 0, 0.5);
+}
+.t1 .t2:hover:nth-child(1) .t3{
+background: #3b5999;
+}
+
+.t1 .t2:hover:nth-child(1) .t3:before{
+background: #2e4a86;
+}
+.t1 .t2:hover:nth-child(1) .t3:after{
+background: #4a69ad;
+}
+.t1 .t2:hover:nth-child(2) .t3{
+background: #55acee;
+}
+.t1 .t2:hover:nth-child(2) .t3:before{
+background: #4184b7;
+}
+.t1 .t2:hover:nth-child(2) .t3:after{
+background: #4d9fde;
+}
+.t1 .t2:hover:nth-child(3) .t3{
+background: #6e5494;
+}
+
+.t1 .t2:hover:nth-child(3) .t3:before{
+background: #6e5494;
+}
+.t1 .t2:hover:nth-child(3) .t3:after{
+background: #6e5494;
+}
+
+.t1 .t2:hover:nth-child(4) .t3{
+background: #0077B5;
+}
+
+.t1 .t2:hover:nth-child(4) .t3:before{
+background: #036aa0;
+}
+.t1 .t2:hover:nth-child(4) .t3:after{
+background: #0d82bf;
+}
+
+.t1 .t2:hover:nth-child(5) .t3{
+background: linear-gradient(#400080, transparent), linear-gradient(200deg, #d047d1, #ff0000, #ffff00);
+}
+
+.t1 .t2:hover:nth-child(5) .t3:before{
+background: linear-gradient(#400080, transparent), linear-gradient(200deg, #d047d1, #ff0000, #ffff00);
+}
+.t1 .t2:hover:nth-child(5) .t3:after{
+background: linear-gradient(#400080, transparent), linear-gradient(200deg, #d047d1, #ff0000, #ffff00);
+}
